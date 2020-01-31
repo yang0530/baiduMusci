@@ -1,0 +1,21 @@
+<!--pages/index/index.wxml-->
+<import src='../../templates/musicList/musicList.wxml'/>
+<!-- 顶部的歌曲 -->
+<view class="header">
+  <view class='box' bindtap='tiao' data-mtype='{{jingdian.type}}'>
+    <image src='{{jingdian.pic_img[0]}}'></image>
+    <view>{{jingdian.name}}</view>
+  </view>
+  <view class='box' bindtap='tiao' data-mtype='{{rege.type}}'>
+    <image src='{{rege.pic_img[0]}}'></image>
+    <view>{{rege.name}}</view>
+  </view>
+</view>
+
+<!-- 三个内容歌曲   -->
+<view bindtap='tiao' data-mtype='{{xinge.type}}'>
+<template is='musicList' data='{{temp:xinge}}'/>
+</view>
+<view bindtap='tiao' data-mtype='{{yaogun.type}}'>
+<template is='musicList' data='{{temp:yaogun}}'/>
+</view>

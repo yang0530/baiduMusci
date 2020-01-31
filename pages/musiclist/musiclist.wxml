@@ -1,0 +1,38 @@
+<import src='../../templates/list/list.wxml'/>
+<!-- 播放按钮 -->
+<view class='playmusic'>
+<view>
+<image src='../../images/musicplay.png'></image>
+</view>
+<view class='name'>{{musicName}}</view>
+<view>
+<!-- <image src='../../images/play.png'></image>
+<image src='../../images/puase.png'></image> -->
+<image bindtap='controllMusic' src="{{flag?'../../images/play.png':'../../images/puase.png'}}"> </image>
+</view>
+</view>
+<view class='header'>
+<image src='{{img}}'></image>
+<view class='comment'>{{comment}}</view>
+</view>
+
+<button bindtap='playAll'>全部播放</button>
+<!-- 列表  -->
+<view class='musiclist'>
+    <view class="list" wx:for='{{songlist}}' wx:key='index' bindtap='play' data-songid='{{item.songid}}' >
+      <view class='index'>{{index+1}}</view>
+      <view class='info'>
+        <view class='title'>{{item.title}}</view>
+        <view class='name'>{{item.author}}</view>
+      </view>
+      <view class='img'>
+        <image src='{{item.pic_big}}'></image>
+      </view>
+    </view>
+</view>
+
+<!-- <view class="musiclist">
+  <view class="list" wx:for='{{songlist}}' wx:key='index'>
+    <template is='list' data='{{item,index}}'/>
+  </view>
+</view> -->

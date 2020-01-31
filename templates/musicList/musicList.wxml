@@ -1,0 +1,10 @@
+<template name='musicList'>
+<view class='musicList'>
+  <view class='img'>
+  <block wx:for='{{temp.pic_img}}' wx:key='index'>
+      <image src='{{item}}'></image>
+</block>
+  </view>
+  <view>{{temp.name}}</view>
+</view>
+</template>

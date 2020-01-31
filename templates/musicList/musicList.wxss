@@ -1,0 +1,12 @@
+.musicList{
+  text-align: center;
+  margin-top: 30rpx;
+}
+.img{
+  display: flex;
+}
+.img image{
+flex: 1;
+height: 240rpx;
+
+}

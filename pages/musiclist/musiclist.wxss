@@ -1,0 +1,51 @@
+/* pages/musiclist/musiclist.wxss */
+.header{
+  display: flex;
+  align-items: center;
+}
+.playmusic{
+  display: flex;
+}
+.playmusic view{
+  flex: 1;
+}
+.playmusic .name{
+  flex: 8;
+}
+.playmusic view image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.header image{
+  flex: 3;
+  width: 260rpx;
+  height: 200rpx;
+  padding-right: 20rpx;
+}
+.header .comment{
+  flex:7;
+}
+/*  */
+.musiclist .list:nth-child(2n){
+  background: #eee;
+}
+.list{
+display: flex;
+padding:10rpx;
+}
+.list .index{
+  flex: 1;
+  padding:0 30prx;
+}
+.list .info{
+  flex: 8;
+}
+.list .img{
+  flex: 1;
+}
+.list .img image{
+  width: 100rpx;
+height: 100rpx;
+border-radius: 50%;
+}
+

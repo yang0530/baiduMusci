@@ -1,0 +1,6 @@
+<template name='list'>
+<view>
+<view>{{index+1}}</view>
+<view>{{item.title}}</view>
+</view>
+</template>
